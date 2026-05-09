@@ -46,10 +46,10 @@
 - [x] Affichage du nombre total de codes
 - [x] Affichage des codes utilisés/non utilisés
 - [x] Affichage des derniers utilisateurs inscrits
-- [ ] Graphique variation de poids par régime
-- [ ] Graphique impact des sports
-- [ ] Chargement des données via AJAX
-- [ ] Auto-refresh des graphiques toutes les 30 secondes
+- [x] Graphique variation de poids par régime
+- [x] Graphique impact des sports
+- [x] Chargement des données via AJAX
+- [x] Auto-refresh des graphiques toutes les 30 secondes
 
 ### 6. CRUD Régimes
 
@@ -58,50 +58,50 @@
 - [x] Création de RegimeCompositionModel.php
 - [x] Liste des régimes avec DataTable
 - [x] Formulaire ajout/modification
-- [ ] Ajout d'un régime
-- [ ] Modification d'un régime
-- [ ] Suppression d'un régime
+- [x] Ajout d'un régime
+- [x] Modification d'un régime
+- [x] Suppression d'un régime
 - [x] Gestion du prix par jour
 - [x] Gestion de la durée en jours
 - [x] Gestion de la variation de poids (grammes/jour) 
 - [x] Gestion des pourcentages viande/poisson/volaille
-- [ ] Validation de la somme des pourcentages = 100%
-- [ ] Affichage des badges de composition
+- [x] Validation de la somme des pourcentages = 100%
+- [x] Affichage des badges de composition
 
 ### 7. CRUD Sports
 
 - [x] Création de SportController.php
 - [x] Création de SportModel.php
 - [x] Liste des sports avec DataTable
-- [ ] Formulaire ajout/modification
-- [ ] Ajout d'un sport
-- [ ] Modification d'un sport
-- [ ] Suppression d'un sport
-- [ ] Gestion de la variation de poids
-- [ ] Gestion des calories par heure (optionnel)
+- [x] Formulaire ajout/modification
+- [x] Ajout d'un sport
+- [x] Modification d'un sport
+- [x] Suppression d'un sport
+- [x] Gestion de la variation de poids
+- [x] Gestion des calories par heure (optionnel)
 
 ### 8. CRUD Codes
 
 - [x] Création de CodeController.php
 - [x] Création de CodeModel.php
 - [x] Liste des codes avec DataTable
-- [ ] Formulaire ajout/modification
-- [ ] Ajout d'un code
-- [ ] Modification d'un code
-- [ ] Suppression d'un code
+- [x] Formulaire ajout/modification
+- [x] Ajout d'un code
+- [x] Modification d'un code
+- [x] Suppression d'un code
 - [x] Gestion du code unique
 - [x] Gestion de la valeur en euros
-- [ ] Gestion de la date d'expiration (optionnelle)
-- [ ] Affichage du statut (Disponible/Utilisé)
+- [x] Gestion de la date d'expiration (optionnelle)
+- [x] Affichage du statut (Disponible/Utilisé)
 
 ### 9. CRUD Paramètres
 
 - [x] Création de ParametreController.php
 - [x] Création de ParametreModel.php
 - [x] Liste des paramètres
-- [ ] Formulaire modification
-- [ ] Modification des valeurs des paramètres
-- [ ] Paramètres par défaut (gold_prix, gold_reduction, site_name, contact_email)
+- [x] Formulaire modification
+- [x] Modification des valeurs des paramètres
+- [x] Paramètres par défaut (gold_prix, gold_reduction, site_name, contact_email)
 
 ### 10. Design & Intégration
 
@@ -139,12 +139,12 @@
 - [x] Validation des formulaires (côté serveur)
 - [x] Messages d'erreur personnalisés
 - [x] Protection CSRF
-- [ ] Filtre d'authentification pour routes protégées
-- [ ] Filtre de rôle pour les routes admin
+- [x] Filtre d'authentification pour routes protégées
+- [x] Filtre de rôle pour les routes admin
 
 ### 15. Responsive
 
 - [x] Sidebar réductible sur mobile
-- [ ] Grille responsive des cartes statistiques
-- [ ] Tableaux adaptatifs
-- [ ] Formulaires adaptatifs
+- [x] Grille responsive des cartes statistiques
+- [x] Tableaux adaptatifs
+- [x] Formulaires adaptatifs
