@@ -17,6 +17,7 @@ $routes->get('/regime/gagner', 'RegimeController::gagner');
 $routes->get('/regime/imc', 'RegimeController::imc');
 $routes->post('/regime/perdre/pdf', 'RegimeController::exportPerdrePdf');
 $routes->post('/regime/gagner/pdf', 'RegimeController::exportGagnerPdf');
+$routes->post('/options/acheter', 'OptionController::purchase');
 $routes->get('/code/redeem', 'CodeController::redeemForm');
 $routes->post('/code/redeem', 'CodeController::redeem');
 

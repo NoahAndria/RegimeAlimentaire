@@ -44,8 +44,8 @@ Tables inclues : User (balance), Code
 
 ## L’utilisateur peut avoir une option Gold qu’il va payer en une  seule fois, à vous de proposer le prix et le mode d’accès
 
-- Page d'achat d'offres (Options)
-- Donnes pour l'instant : Option Gold (donnes a creer)
-- Faire le choix d'Option
-- Apres achat : ajout dans OptionUser
+- Page d'achat d'offres (table Options, page situe dans la page hero lors de la connexion User)
+- Donnes pour l'instant : Option Gold (donnes a creer [deja cree ])
+- Faire le choix d'Option (afficher les choix d'options possible )
+- Apres achat : ajout dans OptionUser, diminuer la balance de l'user par la valeur de l'option
 - Appliquer la reduction (a discuter)

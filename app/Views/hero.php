@@ -67,5 +67,50 @@
             <a class="redeem-btn" href="/code/redeem">Utiliser un code</a>
         </div>
     </section>
+
+    <section class="hero-offers">
+        <div class="offers-head">
+            <div>
+                <span class="offers-kicker">Offres</span>
+                <h2>Choisissez votre option</h2>
+                <p>Payez en une seule fois et profitez des avantages de l'offre choisie.</p>
+            </div>
+        </div>
+
+        <?php if (session()->getFlashdata('success')): ?>
+            <div class="alert alert-success">
+                <?= esc(session()->getFlashdata('success')) ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (session()->getFlashdata('erreur')): ?>
+            <div class="alert alert-error">
+                <?= esc(session()->getFlashdata('erreur')) ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (empty($options)): ?>
+            <div class="empty-state">Aucune offre disponible.</div>
+        <?php else: ?>
+            <div class="offers-grid">
+                <?php foreach ($options as $option): ?>
+                    <article class="offer-card">
+                        <div>
+                            <div class="offer-title"><?= esc($option['label']) ?></div>
+                            <div class="offer-meta">
+                                <span class="offer-price"><?= esc($option['prix']) ?> $</span>
+                                <span class="offer-reduction">Reduction <?= esc($option['reduction']) ?> %</span>
+                            </div>
+                        </div>
+                        <form action="/options/acheter" method="POST">
+                            <?= csrf_field() ?>
+                            <input type="hidden" name="option_id" value="<?= esc($option['id']) ?>">
+                            <button type="submit" class="offer-btn">Acheter</button>
+                        </form>
+                    </article>
+                <?php endforeach; ?>
+            </div>
+        <?php endif; ?>
+    </section>
 </body>
 </html>
